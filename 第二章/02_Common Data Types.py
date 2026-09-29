@@ -51,4 +51,20 @@ print(msg3)
 msg4 = 'Hello 的意思就是 \"您好\"'
 print(msg4)
 
-print("\t欢迎大家进入到Python课程的学习！\n\t大家记得一键三连哦 ~") # \n换行 \t制表符缩进
+print("\t欢迎大家进入到Python课程的学习！\n\t大家记得点赞哦 ~") # \n换行 \t制表符缩进
+
+
+# 字符串拼接
+s1 = "人生苦短" "我用Python" ", OK"
+print(s1)
+
+msg1 = "人生苦短"
+msg2 = "我用Python"
+print("龟叔说：" + msg1 + "，" + msg2)
+
+# 案例:--->str(int数字）--->将int类型的数字转为字符串
+name = "YNA"
+age = 18
+pro = "计科"
+hobby = "Python、cpp"
+print("大家好，我是" + name + "，今年" + str(age) + "岁，学习的专业是" + pro + "，爱好 " + hobby)
