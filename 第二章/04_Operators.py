@@ -19,3 +19,28 @@ y = float(input("请输入y的值："))
 # 0.0999999999999998 --> 精度损失；由于计算机底层是基于二进制进行数据的存储与处理，二进制是无法准确的表示所有的小数，因此涉及到浮点数的运算，可能会出现精度误差
 print("x + y = ", x + y)
 print("x - y = ", x - y)
+
+
+# 赋值运算符: +=  -=  *=  /=  %=  //=  **=
+num = 85
+
+num += 10   # num = num + 10
+print("num += 10 后, num = ", num) # 95
+
+num -= 10   # num = num - 10
+print("num -= 10 后, num = ", num) # 85
+
+num *= 10   # num = num * 10
+print("num *= 10 后, num = ", num) # 850
+
+num /= 10   # num = num / 10
+print("num /= 10 后, num = ", num) # 85.0
+
+num //= 10  # num = num // 10
+print("num //= 10 后, num = ", num) # 8.0
+
+num %= 3    # num = num % 3
+print("num %= 3 后, num = ", num) # 2.0
+
+num **= 3   # num = num ** 3  幂指数运算
+print("num **= 3 后, num = ", num) # 8.0
