@@ -68,3 +68,18 @@ age = 18
 pro = "计科"
 hobby = "Python、cpp"
 print("大家好，我是" + name + "，今年" + str(age) + "岁，学习的专业是" + pro + "，爱好 " + hobby)
+
+# 字符串格式化 ---> 方式一：%s 占位符
+name = "YNA"
+age = 18
+pro = "计科"
+hobby = "Python、cpp"
+print("大家好，我是 %s , 今年 %s 岁，学习的专业是 %s , 爱好 %s" % (name, age, pro, hobby))
+
+# 字符串格式化 ---> 方式二：f"...{变量名/表达式}..." -----> 推荐方式
+name = "YNA"
+age = 18
+pro = "计科"
+hobby = "Python、cpp"
+print(f"大家好，我是 {name} , 今年 {age} 岁，学习的专业是 {pro} , 爱好 {hobby}")
+
