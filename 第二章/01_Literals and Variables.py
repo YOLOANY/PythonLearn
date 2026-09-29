@@ -38,3 +38,14 @@ print("未来第二个月的播放总量：", base + incr + incr)
 base, incr = 20.7,50
 print("未来第一个月的播放总量：", base + incr)
 print("未来第二个月的播放总量：", base + incr + incr)
+
+
+# 案例1：现有两个变量，分别为: a = 10， b = 20，现需要将这两个变量值交换，然后输出到控制台。
+a = 10
+b = 20
+
+c = a  # c = 10
+a = b  # a = 20
+b = c  # b = 10
+
+print(a, b)
