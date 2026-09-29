@@ -1,0 +1,38 @@
+# Claude Code 本地配置
+.claude/
+
+# Python 字节码 / 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 打包 / 分发
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 测试 / 覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.swp
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 环境变量 / 密钥
+.env
