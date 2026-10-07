@@ -20,8 +20,16 @@ password = input("请输入您的B站密码：")
 if account == ok_account and password == ok_password:
     print("登录成功 ~")
     print("进入B站首页 ~")
-
-# 3. 判断账号和密码是否有错误的，如果有任何一个错误，则登录失败，提示错误信息
-if account != ok_account or password != ok_password:
+else:
     print("登录失败！")
     print("账号或密码错误！")
+
+
+# 案例1：根据用户输入的年份，判断这一年是闰年还是平年(非整百年份，且能被4整除的年份是闰年；整百年份(如 1900、2000) 必须被400整除才是闰年)
+year = int(input("请输入需要判定的年份："))
+
+# 如果是 非整百年份，且能被4整除 就是闰年 ; 整百年份，必须被400整除 也是闰年
+if (year % 100 != 0 and year % 4 == 0) or (year % 400 == 0):
+    print(f"{year} 是闰年")
+else:
+    print(f"{year} 是平年")
