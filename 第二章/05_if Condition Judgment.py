@@ -33,3 +33,28 @@ if (year % 100 != 0 and year % 4 == 0) or (year % 400 == 0):
     print(f"{year} 是闰年")
 else:
     print(f"{year} 是平年")
+
+
+# if...elif...else 案例：根据用户输入的数字，判断数字是正数，还是负数，还是0
+num = int(input("请输入数字："))
+
+if num > 0:
+    print(f"{num} 是一个正数")
+elif num < 0:
+    print(f"{num} 是一个负数")
+else:
+    print(f"{num} 是0")
+
+
+# 案例：根据输入的用户名和密码进行系统登录 -- admin/666888   root/547527   zhangsan/123456
+username = input("请输入用户名：")
+password = input("请输入密码：")
+
+if username == "admin" and password == "666888":
+    print("登录成功")
+elif username == "root" and password == "547527":
+    print("登录成功")
+elif username == "zhangsan" and password == "123456":
+    print("登录成功")
+else:
+    print("登录失败，用户名或密码错误")
