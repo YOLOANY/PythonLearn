@@ -60,7 +60,7 @@ s.append(188)
 print(s)
 
 # insert(): 在指定索引之前，插入元素
-s.insert(__index=2, __object=80)
+s.insert(2, 80)  #在序号为2的元素之前插入80
 print(s)
 
 # remove(): 移除列表中第一个匹配到的元素
@@ -83,3 +83,27 @@ print(s)
 # reverse(): 反转列表元素
 s.reverse()
 print(s)
+
+
+
+# --------------------------- 列表 list 案例 ---------------------------
+#案例1．将用户输入的10个数字，存储到一个列表中，并将列表中的数字进行排序，输出其中的最小值、最大值 和 平均值。
+
+
+# 1．定义列表
+num_list = []  # 定义一个空列表
+
+# 2．将用户输入的10个数字存入列表
+for i in range(10):
+    num = int(input(f"请输入第{i+1}个数字: "))
+    num_list.append(num)
+
+print("数字列表:", num_list)
+
+# 3．排序
+num_list.sort()
+
+# 4．输出其中的最小值、最大值 和 平均值。
+print("最小值:", num_list[0])
+print("最大值:", num_list[-1])
+print("平均值:", sum(num_list) / len(num_list))
