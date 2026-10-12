@@ -24,7 +24,7 @@ print(s[::-1])
 
 
 # --------------------------- 字符串常用方法 --------------------------------
-s = "Hello-Python-Hello-World"
+s = "   Hello-Python-Hello-World"
 
 # find() 查找指定字符串第一次出现的索引位置
 index = s.find("-")
