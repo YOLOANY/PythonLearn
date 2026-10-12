@@ -107,3 +107,61 @@ num_list.sort()
 print("最小值:", num_list[0])
 print("最大值:", num_list[-1])
 print("平均值:", sum(num_list) / len(num_list))
+
+
+#案例2：合并两个列表中的元素，并对合并的结果进行去重处理(去除列表中的重复元素)
+num_list1 = [19, 23, 54, 64, 875, 20, 109, 232, 123, 54]
+num_list2 = [55, 80, 72, 35, 60, 123, 54, 29, 91]
+
+# 1．合并列表
+for i in num_list2:
+    num_list1.append(i)
+print("合并后的原始列表:", num_list1)
+
+# 2．去重重复记录
+new_list = []
+for i in num_list1:
+    # 判断new_list中是否存在i，如果不存在，则添加到new_list中
+    if i not in new_list:
+        new_list.append(i)
+print("去重后的列表:", new_list)
+
+
+#案例2(简化)：合并两个列表中的元素，并对合并的结果进行去重处理(去除列表中的重复元素)
+num_list1 = [19, 23, 54, 64, 875, 20, 109, 232, 123, 54]
+num_list2 = [55, 80, 72, 35, 60, 123, 54, 29, 91]
+
+# 1．合并列表
+# 解包：将列表这一类容器解开成一个一个独立元素
+# 组包：将多个值合并到容器
+num_list = [*num_list1, *num_list2]
+num_list = num_list1 + num_list2
+
+print("合并后的原始列表:", num_list)
+
+# 2．去重重复记录
+new_list = []
+for i in num_list1:
+    # 判断new_list中是否存在i，如果不存在，则添加到new_list中
+    if i not in new_list:
+        new_list.append(i)
+print("去重后的列表:", new_list)
+
+
+
+# 案例3：生成1-20的平方列表。 --> range(1，21)
+#方式一:传统方式
+num_list = []
+for i in range(1,21):
+    num_list.append(i**2)
+print(num_list)
+
+#方式二：列表推导式 ---> 就是按照一定格式快速生成列表的方法 ---> 语法格式1：[要插入的值 for i in 序列/列表]
+num_list2=[i**2 for i in range(1,21)]
+print(num_list2)
+
+# 案例4：从一个数字列表中提取所有偶数，并计算其平方，组成一个新的列表。
+#列表推导式 ---> 就是按照一定格式快速生成列表的方法 ---> 语法格式2：[要插入的值 for i in 序列/列表 if 条件]
+nums = [1,2,3,4,5,6,7,8,9,10]
+new_list = [i**2 for i in nums if i%2==0]
+print(new_list)
