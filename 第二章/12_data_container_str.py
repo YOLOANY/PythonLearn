@@ -57,3 +57,29 @@ print(sr)
 # startswith() / endswith() 判断字符串是否是以指定的字符串开头 / 结尾, 返回布尔值
 print(s.startswith("Hello"))
 print(s.endswith("Python"))
+
+
+
+# ----------------------------- 字符串案例 -----------------------------
+# 案例1：邮箱格式验证：用户输入一个邮箱，验证邮箱格式是否正确(包含一个@和至少一个.)，如果输入正确，输出"邮箱格式正确"，否则输出"邮箱格式错误"。
+
+#方式一：
+#1.接收用户输入的邮箱
+email = input("请输入邮箱信息：")
+
+#2.判断邮箱格式是否正确
+if email.count("@")==1 and email.count(".")>=1:
+    print(f"{email}是合法邮箱")
+else:
+    print(f"{email}是非法邮箱")
+
+
+#方式二：  in 运算符 ---> 判断字串是否存在在字符串中，存在，则返回“True”，不存在，则返回“False”
+#1.接收用户输入的邮箱
+email = input("请输入邮箱信息：")
+
+#2.判断邮箱格式是否正确
+if email.count("@")==1 and "." in email:
+    print(f"{email}是合法邮箱")
+else:
+    print(f"{email}是非法邮箱")
