@@ -106,10 +106,18 @@ students = (
 
 # 1. 计算每个学生的总分、各科平均分，然后一并输出出来。 ---> {avg:.1f} ---> 保留一位小数
 print("学号\t\t姓名\t\t语文\t\t数学\t\t英语\t\t总分\t\t平均分")
+#方式一：
 for s in students:
     total=s[2:5:1]
     avg=total/3
     print(f"{s[0]}\t{s[1]}\t{s[2]}\t{s[3]}\t{s[4]}\t{total}\t{avg:.1f}")
+
+#方式二： 元组的解包
+for id,name,chinese,math,english in students:
+    total=chinese+math+english
+    avg=total/3
+    print(f"{id}\t{name}\t{chinese}\t{math}\t{english}\t{total}\t{avg:.1f}")
+
 
 # 2. 统计各科成绩的最低分、最高分、平均分，并输出。
 #2.1 获取各科成绩的列表
@@ -127,8 +135,16 @@ print(f"英语最低分：{min(english_scores)}，最高分：{max(english_score
 
 # 3. 查找成绩优秀（平均分大于90）的学生，并输出。
 print("优秀学生（平均分>90）名单如下：")
+#方式一：
 for s in students:
     total =s[2]+s[3]+s[4]
     avg=total/3
     if avg > 90:
         print(f"学号：{s[0]}，姓名：{s[1]}，平均分：{avg:.1f}")
+
+#方式二： 元组的解包
+for id,name,chinese,math,english in students:
+    total=chinese+math+english
+    avg=total/3
+    if avg > 90:
+        print(f"学号：{id}，姓名：{name}，平均分：{avg:.1f}")
