@@ -73,7 +73,6 @@ if email.count("@")==1 and email.count(".")>=1:
 else:
     print(f"{email}是非法邮箱")
 
-
 #方式二：  in 运算符 ---> 判断字串是否存在在字符串中，存在，则返回“True”，不存在，则返回“False”
 #1.接收用户输入的邮箱
 email = input("请输入邮箱信息：")
